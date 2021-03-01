@@ -20,6 +20,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.pluspagos</groupId>
+			<artifactId>firm </artifactId>
+			<version>0.7.4</version>
+		</dependency>
+		
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -45,7 +51,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	<repositories>
+		<repository>
+        <id>central</id>
+        <name>bintray</name>
+        <url>https://jcenter.bintray.com</url>
+     	</repository>
+	</repositories>
 	<build>
 		<plugins>
 			<plugin>
