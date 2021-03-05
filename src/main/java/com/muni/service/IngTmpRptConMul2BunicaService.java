@@ -1,5 +1,6 @@
 package com.muni.service;
 
+import java.math.BigInteger;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,7 +20,7 @@ public class IngTmpRptConMul2BunicaService implements IngTmpRptConMulBunicaApi {
 	IngTmpRptConMul2BunicaDao ingTmpRptConMul2BunicaDao;
 
 	@Override
-	public <S extends Bunica> S save(S entity) {
+	public <S extends Bunica> S save(S arg0) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -107,6 +108,14 @@ public class IngTmpRptConMul2BunicaService implements IngTmpRptConMulBunicaApi {
 		// TODO Auto-generated method stub
 		return ingTmpRptConMul2BunicaDao.findByDominio(nroComercio);
 	}
+
+	@Override
+	public Bunica buscarporCuim(String cuim, Integer anio, Integer cuota) {
+		// TODO Auto-generated method stub
+		return ingTmpRptConMul2BunicaDao.buscarporCuim(cuim, anio, cuota);
+	}
+
+	
 
 	
 	

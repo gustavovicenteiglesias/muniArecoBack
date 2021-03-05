@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="referrer" content="no-referrer">
+</head >
+<body>
+<div style=display:none>
+<form method="post" action="https://botonpp.asjservicios.com.ar/" id="form-firma"  target=¨_blank¨>
+<input type="hidden" name="CallbackSuccess" id="CallbackSuccess" th:value="${callbackEncriptada}" /><br />
+<input type="hidden" name="CallbackCancel" id="CallbackCancel" th:value="${cancelEncriptada}" /><br />
+<input type="hidden" name="COMERCIO" id="Comercio" th:value="${comercio}" /><br />
+<input type="hidden" name="SucursalComercio" id="Sucursal" th:value="${sucursalEncriptada}" /><br />
+<input type="hidden" name="TransaccionComercioId" th:value="${transaccion_numero}" id="TransaccionComercioId" /><br />
+<input type="hidden" name="Monto" id="Monto" th:value="${montoEncriptado}" /><br />
+<input type="hidden" name="Producto[0]" id="producto1" th:value="${transaccion_item}" /><br />
+<input type="hidden" name="MontoProducto[0]" id="montoproducto1" th:value="${transaccion_priceitem}" /><br />
+<input type="hidden" name="Hash" id="firma" class="col-md-6" th:value="${hashfinal}" readonly /><br />
+<button type="submit" id= "botonForm"  ><br></button>
+<script >document.getElementById('botonForm').click();</script>
+</form>
+</div>
+</body>
+</html>

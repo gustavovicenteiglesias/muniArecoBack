@@ -652,6 +652,31 @@ public class Bunica implements Serializable {
 		this.usuario = usuario;
 	}
 
+	@Override
+	public String toString() {
+		return "Bunica [id=" + id + ", anio=" + anio + ", apynom=" + apynom + ", codDeleg=" + codDeleg
+				+ ", codElectronico=" + codElectronico + ", codMunicipio=" + codMunicipio + ", codPostal=" + codPostal
+				+ ", cod50anual=" + cod50anual + ", cod50anual2of5=" + cod50anual2of5 + ", cod50anualtol="
+				+ cod50anualtol + ", cod50anualtol2of5=" + cod50anualtol2of5 + ", cod50cuota=" + cod50cuota
+				+ ", cod50cuota2of5=" + cod50cuota2of5 + ", cod50cuotatol=" + cod50cuotatol + ", cod50cuotatol2of5="
+				+ cod50cuotatol2of5 + ", cuim=" + cuim + ", cuota=" + cuota + ", desccalenanual=" + desccalenanual
+				+ ", desccalencuota=" + desccalencuota + ", descripcion=" + descripcion + ", digitoVer=" + digitoVer
+				+ ", domFull=" + domFull + ", dpCalle=" + dpCalle + ", dpCodCalle=" + dpCodCalle + ", dpCodLoc="
+				+ dpCodLoc + ", dpCodPostal=" + dpCodPostal + ", dpDept=" + dpDept + ", dpNro=" + dpNro + ", dpPiso="
+				+ dpPiso + ", estado=" + estado + ", fechaEmi=" + fechaEmi + ", fechaProxVto=" + fechaProxVto
+				+ ", fechaTol1=" + fechaTol1 + ", fechaTol2=" + fechaTol2 + ", fechaTol3=" + fechaTol3 + ", fechaVto="
+				+ fechaVto + ", fechaVtoAnual=" + fechaVtoAnual + ", fechaVto2=" + fechaVto2 + ", fechaVto2Anual="
+				+ fechaVto2Anual + ", fechaVto3=" + fechaVto3 + ", fechaVto3Anual=" + fechaVto3Anual + ", ivadesc="
+				+ ivadesc + ", montoAnual=" + montoAnual + ", montoTotal=" + montoTotal + ", monto2=" + monto2
+				+ ", monto2Anual=" + monto2Anual + ", monto3=" + monto3 + ", monto3Anual=" + monto3Anual
+				+ ", nroComprob=" + nroComprob + ", nroComprobAnual=" + nroComprobAnual + ", nroContrib=" + nroContrib
+				+ ", pagoAnualDto=" + pagoAnualDto + ", recurso=" + recurso + ", tipoComprob=" + tipoComprob
+				+ ", tipoComprobAnual=" + tipoComprobAnual + ", transaccion=" + transaccion + ", usuario=" + usuario
+				+ "]";
+	}
+	
+	
+
 	
 	
 }
