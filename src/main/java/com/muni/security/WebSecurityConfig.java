@@ -60,11 +60,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
 			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 			.authorizeRequests().antMatchers("/api/auth/**").permitAll()
+			.antMatchers("/api/bunica/**").permitAll()
+			.antMatchers("/api/comercio/**").permitAll()
 			.antMatchers("/api/test/**").permitAll()
 			.antMatchers("/api/home/imagen/**").permitAll()
 			.antMatchers("/api/facebook/ultimo").permitAll()
-			.antMatchers("api/bunica/**").permitAll()
-			.antMatchers("api/comercio/**").permitAll()
+			
 			.anyRequest().authenticated();
 
 		http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
